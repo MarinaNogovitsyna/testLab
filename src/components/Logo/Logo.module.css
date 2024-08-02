@@ -1,0 +1,23 @@
+.logo {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.25rem;
+  align-items: center;
+}
+
+.circle__primary {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #2a6cea;
+  z-index: 3;
+}
+
+.circle__white {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #eceff2;
+  margin-left: -12px;
+  margin-right: 8px;
+}

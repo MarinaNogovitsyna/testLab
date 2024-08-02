@@ -1,0 +1,33 @@
+.slider {
+  width: 63%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: center;
+}
+
+.slider__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    width: 94%;
+  }
+  .slider__container {
+    gap: 21px;
+  }
+}
+
+@media (max-width: 376px) {
+  .slider {
+    width: 90%;
+    margin-top: 27px;
+    margin-bottom: 35px;
+  }
+}

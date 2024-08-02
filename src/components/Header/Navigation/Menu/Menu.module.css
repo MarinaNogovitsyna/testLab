@@ -1,0 +1,30 @@
+.container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 375px;
+    max-width: 100%;
+    height: 100vh;
+    padding: 0 16px;
+    z-index: 5;
+    background-color: white;
+}
+
+.menu__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 0;
+    border-bottom: 1px solid #ECEFF2;
+}
+
+.menu__top svg {
+    cursor: pointer;
+}
+
+.menu__item {
+    padding: 20px 0;
+    border-bottom: 1px solid #ECEFF2;
+    color: #83898F;
+    display: flex;
+    justify-content: space-between;
+}

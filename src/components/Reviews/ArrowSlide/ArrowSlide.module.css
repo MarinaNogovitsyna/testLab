@@ -1,0 +1,7 @@
+.arrow {
+    cursor: pointer;
+}
+
+.arrow:hover path {
+    fill: #2A6CEA; 
+  }

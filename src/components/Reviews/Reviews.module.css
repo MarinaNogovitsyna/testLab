@@ -1,0 +1,25 @@
+.reviews {
+    width: 100%;
+    background: #F6F8FA;
+    padding: 55px 0 47px 0;
+}
+
+.reviews h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+@media (max-width: 768px){
+    .reviews {
+        padding: 33px 0 47px 0; 
+    }
+}
+
+@media(max-width: 376px) {
+    .reviews {
+        padding: 27px 0 35px 0; 
+    }
+    .reviews h1 {
+        font-size: 1.5rem;
+    }
+}

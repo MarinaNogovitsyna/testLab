@@ -1,0 +1,12 @@
+.pagination {
+    width: max-content;
+    display: flex;
+    gap: 17px;
+    margin: auto;
+}
+
+.pagination__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}

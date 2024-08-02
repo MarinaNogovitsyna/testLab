@@ -1,0 +1,23 @@
+.navigation {
+    width: 63%;
+    margin: auto;
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    z-index: 3;
+}
+
+@media (max-width: 768px){
+    .navigation {
+        width: 100%;
+        padding: 0;
+    }
+    .logo {
+        padding: 28px 0 0 16px;
+        align-self: flex-start;
+    }
+}
