@@ -15,3 +15,8 @@ export interface Review {
     text: string;
     autor: string;
 }
+
+export interface Question {
+    title: string;
+    text: string;
+}
