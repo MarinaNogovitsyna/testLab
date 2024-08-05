@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/testLab/static/css/main.cd59a626.css",
+    "main.js": "/testLab/static/js/main.b681ef9c.js",
+    "static/js/453.fd1e016e.chunk.js": "/testLab/static/js/453.fd1e016e.chunk.js",
+    "static/media/header.png": "/testLab/static/media/header.21400d73ff9f0c529fee.png",
+    "static/media/header2.png": "/testLab/static/media/header2.7218a4eaf4e9cbee311d.png",
+    "static/media/block3img.png": "/testLab/static/media/block3img.b2459510c1ed7c531396.png",
+    "index.html": "/testLab/index.html",
+    "main.cd59a626.css.map": "/testLab/static/css/main.cd59a626.css.map",
+    "main.b681ef9c.js.map": "/testLab/static/js/main.b681ef9c.js.map",
+    "453.fd1e016e.chunk.js.map": "/testLab/static/js/453.fd1e016e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd59a626.css",
+    "static/js/main.b681ef9c.js"
+  ]
+}
