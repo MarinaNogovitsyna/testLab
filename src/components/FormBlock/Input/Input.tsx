@@ -6,13 +6,13 @@ import { MdCancel } from "react-icons/md";
 
 interface InputProps {
   type: "name" | "phone";
+  handleValid: (type: "name" | "phone", isValid: boolean) => void;
 }
 
-export const Input: React.FC<InputProps> = ({ type }) => {
+export const Input: React.FC<InputProps> = ({ type, handleValid }) => {
   const [value, setValue] = useState("");
   const [isValid, setIsValid] = useState<boolean>(true);
   const [style, setStyle] = useState<string>(styles.form__input)
-  const inputRef = useRef(null); 
   
   const helperText =
     type === "name" ? "Допустимы только буквы" : "Допустимы цифры и знак +";
@@ -22,13 +22,23 @@ export const Input: React.FC<InputProps> = ({ type }) => {
   };
 
   const handleBlur = () => {
-
+    if(value){
+        if(!isValid){
+            setStyle(`${styles.form__input} ${styles.input_with_value} ${styles.input_with_error}`)
+        }
+        else {
+            setStyle(`${styles.form__input} ${styles.input_with_value}`)
+        }
+    } else {
+        setStyle(styles.form__input)
+    }
   }
 
   useEffect(() => {
     if (value) {
       const isCorrect = validateInput(value, type);
       setIsValid(isCorrect);     
+      handleValid(type, isCorrect)
     }
   }, [value]);
 
@@ -36,10 +46,10 @@ export const Input: React.FC<InputProps> = ({ type }) => {
     <div className={styles.form__item}>
       <input
         type="text"
-        className={styles.form__input}
+        className={style}
         required
         onChange={(e) => handleChange(e)}
-        ref={inputRef}
+        onBlur={handleBlur}
       />
       <label className={styles.form__label}>
         {type === "name" ? "Имя" : "Телефон"}

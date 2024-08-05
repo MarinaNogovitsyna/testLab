@@ -8,6 +8,7 @@ import { Reviews } from './components/Reviews/Reviews';
 import { Questions } from './components/Questios/Questions';
 import { InfoBlock } from './components/InfoBlock/InfoBlock';
 import { FormBlock } from './components/FormBlock/FormBlock';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Questions />
       <InfoBlock />
       <FormBlock />
+      <Footer />
     </>
   );
 }
