@@ -6,6 +6,8 @@ import { HowWork } from './components/HowWork/HowWork';
 import { Block3 } from './components/Block3/Block3';
 import { Reviews } from './components/Reviews/Reviews';
 import { Questions } from './components/Questios/Questions';
+import { InfoBlock } from './components/InfoBlock/InfoBlock';
+import { FormBlock } from './components/FormBlock/FormBlock';
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
       <Block3 />
       <Reviews />
       <Questions />
-      <div id='form' style={{height: 300}}>section4</div>
+      <InfoBlock />
+      <FormBlock />
     </>
   );
 }
